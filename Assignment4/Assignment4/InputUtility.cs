@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Assignment3
+namespace Assignment4
 {
     class InputUtility
     {
@@ -22,7 +22,7 @@ namespace Assignment3
             bool goodNumber = int.TryParse(stringToConvert, out intOutValue);
             return goodNumber;
         }
-        
+
         /// <summary>
         /// Validates and converts a textinput representing a  positive value into an integer
         /// </summary>
@@ -58,7 +58,7 @@ namespace Assignment3
         public static bool GetPositiveDouble(string stringToConvert, out double dblOutValue)
         {
             bool goodDouble = double.TryParse(stringToConvert, out dblOutValue);
-            if(goodDouble && (dblOutValue >= 0.0))           
+            if (goodDouble && (dblOutValue >= 0.0))
                 return goodDouble;
             return false;
         }
